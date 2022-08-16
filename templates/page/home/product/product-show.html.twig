@@ -1,0 +1,161 @@
+{% extends "partials/_base_front.html.twig" %}
+{% block body %}
+
+    {% include "page/navbar.html.twig" %}
+
+    <div class="container">
+        <div class="row">
+            <!-- Image -->
+            <div class="col-12 col-lg-5">
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <img class="img-fluid image-product-show" src="{{ asset('assets/images/Bracelet-amincissant-1_.webp') }}" />
+                    </div>
+                </div>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <img class="img-fluid image-product-show" src="{{ asset('assets/images/Bracelet-amincissant-en-am-thyste-pour-femmes-perle.webp') }}" />
+                    </div>
+                </div>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <img class="img-fluid image-product-show" src="{{ asset('assets/images/Bracelet-amincissant-en-am-thyste-pour-femmes-perle2.webp') }}" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add to cart -->
+            <div class="col-12 col-lg-7 add_to_cart_block">
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-lg-5">
+                                <br/>
+                                <div class="reviews_product mb-2 ">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    (187)
+                                </div>
+                                <br/>
+                                <p class="card-text">
+                                    Choisissez votre pack :
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p class="price">19.90 €</p>
+                                <p class="price_discounted">59.90 €</p>
+                            </div>
+                        </div>
+                        <form method="get" action="cart.html">
+                            <div role="tabpanel">
+                                <!-- List group -->
+                                <div class="list-group" id="myList" role="tablist">
+                                    <a class="list-group-item-style list-group-item-action" data-bs-toggle="list" href="#" role="tab">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-8 mt-2">
+                                                <p class="card-text">
+                                                    <b><span class="dot"></span> 1 bracelet amincissant la nuit et détente le jour</b>
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <p class="price-mini">9.90 €</p>
+                                                <p class="price_discounted-mini">19.90 €</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item-style list-group-item-action" data-bs-toggle="list" href="#" role="tab">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-8 mt-2">
+                                                <p class="card-text">
+                                                    <b><span class="dot"></span> 2 bracelets amincissants la nuit et détente le jour</b>
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <p class="price-mini">16.90 €</p>
+                                                <p class="price_discounted-mini">39.90 €</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item-style-active list-group-item-action" data-bs-toggle="list" href="#" role="tab"><div class="row">
+                                            <div class="col-12 col-lg-8 mt-2 reviews_product">
+                                                <p class="card-text">
+                                                    <i class="fa-solid fa-crown"></i> Meilleur vente <i class="fa-solid fa-crown"></i><br/>
+                                                    <b><span class="dot-active"></span> 3 bracelets amincissants la nuit et détente le jour</b>
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <p class="price-mini">19.90 €</p>
+                                                <p class="price_discounted-mini">59.90 €</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="cart.html" class="btn btn-success btn-lg btn-block text-uppercase">
+                                <i class="fa fa-shopping-cart"></i> Ajouter au panier
+                            </a>
+                        </form>
+                        <div class="product_rassurance">
+                            <img class="img-fluid" src="{{ asset('assets/images/stripe-badge-white.png') }}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <p class="card-text">{{ article.description|nl2br }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <!-- Reviews -->
+            <div class="col-12" id="reviews">
+                <div class="card border-light mb-3">
+                    <div class="card-header bg-purple text-white text-uppercase"><i class="fa fa-comment"></i> Avis</div>
+                    <div class="card-body" style="background-color: #f8f9fa;">
+                        <div class="review">
+                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                            <meta itemprop="datePublished" content="01-01-2016">01 Jul 2022 05:12
+
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            D***r
+                            <p class="blockquote">
+                            <p class="mb-0">Excellent</p>
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="review">
+                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                            <meta itemprop="datePublished" content="01-01-2016">04 Aug 2022 07:31
+
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            M***a
+                            <p class="blockquote">
+                            <p class="mb-0"></p>
+                            </p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript">
+
+    </script>
+{% endblock %}

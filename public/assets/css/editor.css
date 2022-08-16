@@ -1,0 +1,141 @@
+.ce-toolbar__content{
+    max-width: 90% !important;
+}
+
+.ce-block__content {
+    max-width: 85% !important;
+}
+
+#editor-menu-wrap {
+    max-width: 100px !important;
+}
+
+#editor-menu-wrap ul {
+
+}
+
+#editor-menu-wrap ul li:hover {
+    cursor: pointer;
+    background-color: #1a1a1ab5;
+    color: rgb(218, 218, 218);
+}
+
+#editor-menu-wrap ul li {
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    width: 90%;
+    padding: 5px;
+    margin-top: 10px !important;
+    margin: auto;
+}
+
+#template-list {
+    transform: scale(.8);
+    width: 120%;
+    position: relative;
+    left: -10%;
+    top: -10%;
+}
+
+#template-list .template {
+    transform: scale(.7);
+    margin: 0 10px;
+    padding: 20px;
+    width: 130%;
+    left: -15%;
+    position: relative
+}
+
+
+#editor-menu-wrap ul li .icon {
+    display: flex;
+    justify-content: center;
+}
+
+
+#editor-menu-wrap ul li i {
+    font-size: 25px;
+}
+
+#editor-menu-wrap ul li span {
+    font-size: 9px;
+}
+
+#editor-menu-wrap ul li .text {
+    text-align: center;
+}
+
+
+/* Template window */
+.template-window {
+    width: 70vw;
+    height: 90vh;
+    min-width: 300px;
+    z-index: 1;
+    right: 80px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: 350ms ease-in-out;
+}
+.template-window ul {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.template-window.closed {
+    z-index: -1;
+    opacity: .8;
+    transform: translateX(100%);
+    right: 0;
+}
+
+.template-window .upper-bar i {
+    font-size: 24px;
+    padding: 5px;
+    right: 5px;
+}
+
+.template-window .upper-bar i:hover {
+    cursor: pointer;
+}
+
+
+.template-window .upper-bar {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    background-color: rgb(195, 195, 195);
+    height: 40px;
+    border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.form-switch.big-switch input {
+    height: 20px;
+    width: 38px;
+}
+
+.form-switch.big-switch input:hover {
+    cursor: pointer;
+}
+
+.form-switch.big-switch label {
+    padding-top: 3px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.form-switch.big-switch span {
+    font-size: 12px;
+}
+
+#blogImagePreview {
+    object-fit: cover;
+    max-height: 150px;
+    max-width:200px;
+}
+
+input#updatedAt:hover {
+    cursor: pointer;
+}

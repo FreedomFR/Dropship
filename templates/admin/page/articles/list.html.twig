@@ -1,0 +1,41 @@
+{% extends 'partials/_base_back.html.twig' %}
+{% block title %}Backoffice{% endblock %}
+{% block body %}
+    {% include "page/admin-navbar.html.twig" %}
+    <div class="admin-main-wrapper row p-3">
+        {% include "admin/vertical-navbar.html.twig" %}
+        <div class="col-10">
+            <h3 class="border-bottom pb-2 mb-5">Liste des articles</h3>
+            <div class="row justify-content-end">
+                <a class="col-2 btn erudit-mini-card" href="{{ path('admin_article_form_add') }}">Ajouter un article</a>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for article in articles %}
+                    <tr>
+                        <th scope="row">{{ article.id }}</th>
+                        <td>{{ article.nom }}</td>
+                        <td>
+                            <a class="text-success border-success px-2 py-1 btn m-0" style="font-size:17px" href="{{ path('admin_article_form_add', { id: article.id }) }}"><i class="fa-solid fa-cog"></i></a>
+                            <a class="text-success border-success px-2 py-1 btn m-0" style="font-size:17px" href="{{ path('admin_article_form_image_add', { id: article.id }) }}"><i class="fa-solid fa-image"></i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+{% block java %}
+
+{% endblock %}
+
+{% block stylesheets %} {# CSS propre à cette page #}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'partials/_base_back.html.twig' %}
+{% block title %}Backoffice{% endblock %}
+{% block body %}
+    {% include "page/admin-navbar.html.twig" %}
+    <div class="admin-main-wrapper row p-3">
+        {% include "admin/vertical-navbar.html.twig" %}
+        <div class="col-10">
+            <h3 class="border-bottom pb-2 mb-5">Liste des utilisateurs</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Mail</th>
+{#                    <th scope="col">Rôle</th>#}
+                    <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for user in users %}
+                    <tr>
+                        <th scope="row">{{ user.id }}</th>
+                        <td>{{ user.nom }}</td>
+                        <td>{{ user.prenom }}</td>
+                        <td>{{ user.email }}</td>
+{#                        <td>{{ user.roles }}</td>#}
+                        <td></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %} {# CSS propre à cette page #}
+{% endblock %}

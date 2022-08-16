@@ -1,0 +1,332 @@
+.simple-button {
+    background: linear-gradient(45deg, rgb(219, 66, 66) 0%, rgb(231, 83, 83) 100%) !important;
+    height: 55px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 11px 14px 1px rgba(5, 124, 175, .1);
+    border-radius: 6px !important;
+    text-transform: none;
+    color: #fff;
+    border: 1px solid transparent;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.simple-button:hover {
+    transform: scale(1.05);
+}
+
+.form-control {
+    /* height: auto !important; */
+    background: #fff !important;
+    color: #000000 !important;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #e6e6e6;
+}
+
+.tendance-mini-card {
+    position: relative;
+    height: 100%;
+    /* min-height: 250px; */
+    border: none;
+    box-shadow: 0 11px 14px 1px rgba(5, 124, 175, .1);
+    background-color: white;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+    text-transform: none;
+    font-size: 16px !important;
+    background: 0 0;
+    color: #343d48;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border: 1px solid #e6e6e6;
+    transition: all .2s ease-in-out;
+    height: 50px;
+}
+
+.tendance-mini-card:hover {
+    transform: scale(1.05);
+    border: 1px solid #d7480c;
+    color: #d7480c;
+}
+
+.tendance-erudit-95 {
+    max-width: 95%;
+}
+
+input{
+    background: #fff;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.form-control{
+    margin-bottom: 25px;
+    box-shadow: 0 1px 12px 1px rgba(5, 124, 175, .1) !important;
+    border: 2px solid #dddddd;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+/**********************************
+** Page compte, création de page
+**
+********/
+.img-editable:hover {
+  outline: 2px dotted rgb(243, 134, 9) !important;
+  cursor: pointer;
+}
+
+.editable, .img-editable {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+}
+
+.editable:hover {
+  outline: 2px dotted rgb(7, 202, 137) !important;
+  cursor: pointer;
+}
+
+#inputYoutubeLink, #page-youtube-edition label{
+  font-size: 12px;
+}
+
+#page-element-edition, #page-youtube-edition {
+  width:300px;
+}
+.edition-wrapper {
+  top: 110px;
+}
+
+#page-img-edition {
+  width: 300px;
+  min-height: 200px !important;
+}
+
+#page-template-list {
+  width: 280px;
+  min-height: 300px;
+  color: white;
+  background-color: #464646;
+}
+
+
+#page-element-edition textarea {
+  min-height:200px !important;
+  width: 95%;
+  width: -moz-available !important;
+  background-color:red;
+  font-size: 11px;
+}
+
+#img-edition-display img {
+  height: auto !important;
+}
+
+#page-template-list button {
+  color: white;
+}
+
+.element-wrapper {
+  margin-left: -220px;
+}
+
+@media screen and (max-width: 1111px){
+  .element-parent-wrapper {
+      margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1350px){
+  #page-element-edition {
+      width: 350px;
+  }
+}
+@media screen and (min-width: 1600px){
+  #page-elements {
+      width: 100% !important;
+  }
+}
+
+@media screen and (max-width:900px) {
+  #collapse-option-items {
+      font-size: 13px !important;
+  }
+}
+
+#collapse-option-items {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.option-description {
+  position: absolute;
+  right: 1rem;
+  top: 40%;
+  color:#6693aa;
+}
+@media screen and (max-width:400px){
+  .option-description {
+      top: 33%;
+      font-size: 22px;
+  }
+}
+
+input.input-element {
+  padding: 5px;
+  outline: none;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px;
+}
+
+input.input-element:focus {
+  border: 1px solid #94a7d4;
+  box-shadow:
+  2.3px 1.2px 3.6px -45px rgba(0, 0, 0, 0.022),
+  6.3px 3.3px 10px -45px rgba(0, 0, 0, 0.033),
+  15.1px 7.8px 24.1px -45px rgba(0, 0, 0, 0.044),
+  50px 26px 80px -45px rgba(0, 0, 0, 0.07)
+;
+}
+
+
+/*****************
+*
+* Vertical navbar
+*
+*****************/
+#vertical-navbar button {
+  font-size: 15px !important;
+  margin-bottom: 13px !important;
+  border-radius: 5px;
+  height: auto;
+  padding: 12px 9px 0px 10px;
+}
+
+#vertical-navbar svg {
+  height: 25px;
+  width: 20px;
+  padding: 0;
+  left: 10px;
+  position: relative;
+}
+/* * * * * * * * * */
+.form-control-page {
+  /* height: auto !important; */
+  font-size: 15px;
+  color: #252525 !important;
+  padding: 7px;
+}
+
+.container-formBien {
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 5px;
+}
+
+#ici {
+  transform: translateY(-21px);
+}
+
+#ici span {
+  background-color: #f8f9fa;
+  padding: 0 10px;
+}
+
+#simpleBTN, #updateBTN {
+  height: 44px !important;
+}
+
+#simpleBTN:hover, #updateBTN:hover {
+  transform: scale(1.01);
+}
+
+label[for="page-img-input"]:hover {
+  cursor: pointer;
+  color: #165cff;
+  text-decoration: underline;
+}
+
+.btn-arrow-deplacer:hover {
+  cursor: pointer;
+  background-color: #bfe1ff;
+  color: #000000;
+}
+
+.btn-arrow-deplacer {
+  color: rgb(36, 36, 36);
+}
+
+.deplacer-txt {
+  font-size: 15px;
+}
+
+#btn-add-template {  
+  color: rgb(231, 83, 83);
+  font-size: 28px;
+}
+
+#btn-add-template:hover {  
+  color: rgb(216, 47, 47);
+}

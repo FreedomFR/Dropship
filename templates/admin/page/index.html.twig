@@ -1,0 +1,21 @@
+{% extends 'partials/_base_back.html.twig' %}
+{% block title %}Backoffice{% endblock %}
+{% block body %}
+    {% include "page/navbar.html.twig" %}
+    <div class="admin-main-wrapper row p-3">
+        {% include "admin/vertical-navbar.html.twig" %}
+        <div class="col-10">
+            <div class="col-sm-6" id="back" style="z-index: 20; left: 49%; text-align: center; position: fixed;">
+            </div>
+            <div class="row d-flex justify-content-center" id="compte">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+
+{% block stylesheets %} {# CSS propre à cette page #}
+{% endblock %}

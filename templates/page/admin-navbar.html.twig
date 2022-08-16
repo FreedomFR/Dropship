@@ -1,0 +1,20 @@
+{% block stylesheets %}
+<style>
+    .pre-nav {
+        background-color: #171717;
+        
+    }
+    .pre-nav i, .pre-nav i span {
+        color: white !important;
+    }
+</style>
+{% endblock %}
+<nav class="navbar navbar-expand-md navbar-dark bg-purple">
+    <div class="container">
+        <a class="navbar-brand" href="{{ path('home') }}"><img class="img-fluid" src="{{ asset('assets/images/logo.png') }}" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+{% block javascripts %}{% endblock %}

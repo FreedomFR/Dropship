@@ -1,0 +1,35 @@
+{% extends 'partials/_base_back.html.twig' %}
+{% block title %}Backoffice{% endblock %}
+{% block body %}
+    {% include "page/admin-navbar.html.twig" %}
+<div class="admin-main-wrapper row p-3">
+    {% include "admin/vertical-navbar.html.twig" %}
+    <div class="col-10">
+        {#        <a class="btn tendance-mini-card ms-auto col-3 shadow-sm" href="{{ path('admin_articles_list') }}"><i class="fa-solid fa-arrow-left-long me-2"></i>Retour</a>#}
+        <div class="row d-flex justify-content-center">
+            <h3 class="border-bottom pb-2 mb-5">Nouveau article</h3>
+            <form class="row" id="form" method="post" action="{{ path('admin_article_form_image_save') }}" enctype="multipart/form-data">
+                <input type="hidden" name="id" id="id" value="{{ id }}">
+                <div class="mb-3 col-6">
+                    <label for="image" class="form-label">Image</label>
+                    <input class="form-control" type="file" id="image" name="image[]">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="alt" class="form-label">Alt</label>
+                    <input type="text" class="form-control" name="alt[]" id="alt" aria-describedby="alt">
+                </div>
+
+
+                <div class="mt-5 d-flex justify-content-center">
+                    <button class="btn btn-success col-5" type="submit">Valider</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+    {% block java %}
+
+    {% endblock %}
+
+    {% block stylesheets %} {# CSS propre à cette page #}
+{% endblock %}

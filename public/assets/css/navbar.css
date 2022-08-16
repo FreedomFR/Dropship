@@ -1,0 +1,131 @@
+:root {
+    --grey-bg-clear: #232323d0;
+    --grey-bg: #232323;
+    --text-lime: #42f522;
+    --pre-nav-height: 40px;
+}
+
+#navbar .navbar-toggler {
+    box-shadow: none;
+}
+
+nav.main,
+.pre-nav {
+    background-color: var(--grey-bg);
+    color: white !important;
+}
+
+nav.main {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    transition: background-color 500ms;
+}
+
+nav.main.floating {
+    background-color: var(--grey-bg-clear);
+}
+
+.pre-nav {
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding: 10px 7%;
+    height: var(--pre-nav-height);
+}
+
+.pre-nav i {
+    color: var(--text-lime);
+}
+
+.pre-nav a {
+    color: white;
+}
+
+.navbar-nav {
+    font-size: 25px;
+    font-weight: 600;
+    /*font-family: 'Roboto';*/
+}
+
+.navbar-nav a{
+    color: white;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:focus { 
+    color: rgb(2, 195, 2);
+}
+
+#navbar .dropdown-menu {
+    border-radius: 0;
+    color: black;
+}
+
+#navbar .dropdown-menu {
+    border-radius: 0;
+    color: black;
+}
+
+#navbar .dropdown-menu a {
+    color: black;
+}
+
+#navbar .dropdown-menu a:hover {
+    color: rgb(2, 195, 2);
+}
+
+#navbar .dropdown-menu li:not(:last-child) {
+    border-bottom: 1px solid rgba(192, 192, 192, 0.579);
+}
+
+#navbar .dropdown-menu li {
+    padding: 5px 10px;
+}
+
+#navbar .dropdown-menu li i {
+    font-size: .8rem;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .effect-1::before {
+        display: none !important;
+   }
+}
+.effect-1 {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+}
+.effect-1::before, .effect-1::after  {
+    content: '';
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+
+.effect-1 {
+    padding-top: 10px;
+}
+.effect-1:before {
+    content: "";
+    display: block;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    height: 2px;
+    background: #ffbb00;
+    transform: scaleX(0);
+}
+.effect-1:hover:before {
+    transform: scaleX(1);
+}
+
+
+.logo-nav
+{
+    height: 100%;
+    width: 141px;
+    object-fit: cover;
+}

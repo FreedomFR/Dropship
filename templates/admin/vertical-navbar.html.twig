@@ -1,0 +1,61 @@
+{% block stylesheets %}
+<style>
+    #vertical-navbar .nav-item {
+        margin-top: 5px;
+        border: 1px solid #454444;
+        border-radius: 5px;
+        transition: 100ms ease-in;
+    }
+
+    #vertical-navbar .nav-item.logout {
+        background-color: #454444;
+    }
+
+    #vertical-navbar .nav-item.logout a,
+    #vertical-navbar .nav-item.logout span {
+        color: white;
+    }
+
+    #vertical-navbar .nav-item:hover {
+        margin-top: 5px;
+        border: 1px solid #454444;
+        border-radius: 5px;
+        scale: 1.02;
+    }
+
+    #vertical-navbar .nav-item a,
+    #vertical-navbar .nav-item span {
+        text-decoration: none;
+        color: #171717;
+    }
+
+    #vertical-navbar .nav-item span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+</style>
+{% endblock %}
+
+
+<div id="vertical-navbar" class="h-100 col-md-2 d-flex flex-column justify-content-around">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ path('admin_users') }}">
+                <i class="fa-solid fa-user"></i>
+                <span>Utilisateurs</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ path('admin_articles_list') }}">
+                <i class="fa-solid fa-shop"></i>
+                <span>Articles</span>
+            </a>
+        </li>
+        <li class="nav-item logout">
+            <a class="nav-link active" href="{{ path('app_logout') }}">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Déconnexion</span>
+            </a>
+        </li>
+    </ul>
+</div>

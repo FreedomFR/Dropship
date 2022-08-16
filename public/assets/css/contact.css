@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto';
+}
+
+.text-block {
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.text-block p {
+    line-height: 20px;
+}
+
+.text-block a {
+    color: rgb(4, 171, 4);
+    text-decoration: none;
+}
+
+.text-block a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.page-title-lime-bloc {
+    color: rgb(19, 19, 19);
+    background-color: var(--color-limonade);
+    text-align: center;
+    height: 120px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: auto;
+    text-align: end;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto';
+    letter-spacing: -.7px;
+}
+
+.zebra_bg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 3px;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(135deg, transparent 10%, #42f522 10%, #42f522 50%, transparent 50%, transparent 60%, #42f522 60%, #42f522);
+    background-image: linear-gradient(-45deg, transparent 10%, #42f522 10%, #42f522 50%, transparent 50%, transparent 60%, #42f522 60%, #42f522);
+    background-size: 7px 7px;
+}
+
+.contact-info i{
+    color: rgb(26, 195, 26);
+}
+
+.contact-info span{
+    color: rgb(59, 59, 59);
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    font-size: .8rem;
+}
+
+.contact-info a:hover{
+    color: rgba(65, 163, 0, 0.985);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: #82bb78;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: #62b054;
+    border-color: #6bba5d;
+    box-shadow: 0 0 0 .25rem rgba(13, 253, 69, 0.25);
+}
+
+.contact-form input,
+.contact-form textarea {
+    color: rgb(74, 74, 74);
+    font-size: 14px;
+}
+
+.contact-form button {
+    color: white;
+    text-transform: uppercase;
+    background-color: #38bb21;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    color: rgb(192, 192, 192);
+    background-color: #288a16;
+}
+
+
+/*.devis-contact-img{*/
+/*    z-index: 3;*/
+/*    left: 44.6%;*/
+/*    top: -6px;*/
+/*    position: absolute;*/
+/*    width: auto;*/
+/*    height: 100px;*/
+/*}*/

@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto';
+}
+
+.bg-lime {
+    background-color: var(--color-limonade);
+}
+
+.page-title-lime-bloc {
+    color: rgb(19, 19, 19);
+    background-color: var(--color-limonade);
+    text-align: center;
+    height: 120px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: auto;
+    text-align: end;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto';
+    letter-spacing: -.7px;
+}
+
+.lime-line-start::before {
+    content: '';
+    height: 2px;
+    width: 50px;
+    background-color: lime;
+    display: block;
+    position: relative;
+    left: -60px;
+    top: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .lime-line-start::before {
+        top: 16px;
+    }
+}
+
+.lime-line-start {
+    margin-left: 60px;
+}
+
+.title-lime-dark {
+    color: rgb(10, 131, 10);
+}
+
+.article-container {
+    justify-content: space-around;
+}
+
+.article-img {
+    border-radius: .7rem;
+}
+
+.article-wrap {
+    border-radius: .6rem;
+}
+
+.article-details a {
+    color: rgb(62, 222, 62);
+}
+
+
+.underline{
+    position: relative;
+  }
+  
+.underline::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(136, 252, 78);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.article-wrap {
+    transition: 300ms ease-in-out;
+}
+  
+.article-wrap:hover,
+.article-wrap {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+}
+
+.article-img {
+    transition: 200ms ease-in-out;
+}
+  @media (hover: hover) and (pointer: fine) {
+    .article-wrap:hover {
+        cursor: pointer;
+        transform: scale(1.02) !important;
+    }
+
+    .article-wrap:hover 
+    .article-img
+    {
+        transform: scale(.98);
+    }
+
+    .article-wrap:hover 
+    .underline::before{
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+
+    .underline:hover::before{
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+
+    .article-wrap:hover ~
+    .underline:hover {
+        color: rgb(31, 115, 31) !important;
+    }
+  }
